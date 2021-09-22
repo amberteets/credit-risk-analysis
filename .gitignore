@@ -1,0 +1,5 @@
+# Data exploration notebook
+data_exploration.ipynb
+
+# .ipynb checkpoint files
+*.ipynb_checkpoints/*
