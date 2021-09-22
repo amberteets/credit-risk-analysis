@@ -14,6 +14,8 @@ Oversampling Algorithms: `RandomOverSampler`, `SMOTE`.
 
 Undersampling Algorithm: `ClusterCentroids`.
 
+Combination Algorithm: `SMOTEENN`
+
 For each algorithm:
 
 - Resample dataset
