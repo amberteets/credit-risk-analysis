@@ -6,15 +6,26 @@ Investigate the efficacy of various machine learning sampling techniques and alg
 
 ## Approach
 
-### Using Resampling Models to Predict Credit Risk
+### Resampling Models to Predict Credit Risk
 
-With knowledge of `imbalanced-learn` and `scikit-learn` libraries, evaluate three machine learning models by using resampling to determine which is better at predicting credit risk.
+With `imbalanced-learn` and `scikit-learn` libraries, evaluate four machine learning models by using resampling to determine which is better at predicting credit risk.
 
-Oversampling Algorithms: `RandomOverSampler`, `SMOTE`.
+- Oversampling Algorithms: `RandomOverSampler`, `SMOTE`.
+- Undersampling Algorithm: `ClusterCentroids`.
+- Combination Algorithm: `SMOTEENN`
 
-Undersampling Algorithm: `ClusterCentroids`.
+For each algorithm:
 
-Combination Algorithm: `SMOTEENN`
+- Resample dataset
+- View count of target classes
+- Train logistic regression classifier
+- Calculate balanced accuracy score
+- Generate confusion matrix
+- Generate classification report
+
+### Ensemble Classifiers to Predict Credit Risk
+
+With `imbalanced-learn.ensemble` library, evaluate two different ensemble classifiers - `BalancedRandomForestClassifier` and `EasyEnsembleClassifier` - to predict credit risk.
 
 For each algorithm:
 
