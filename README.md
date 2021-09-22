@@ -9,20 +9,14 @@ Investigate the efficacy of various machine learning sampling techniques and alg
 ### Data Cleaning
 
 1. Select feature and target columns from DataFrame.
-
-- For features, drop identification columns (e.g. 'member_id')
-- Target is 'loan_status'
-
+    - For features, drop identification columns (e.g. 'member_id')
+    - Target is 'loan_status'
 2. Drop completely null columns, and rows with any null values.
-
 3. Drop 'Issued' loan status (not enough information to map as low- or high-risk).
-
 4. Convert interest rate from string to numerical data type.
-
 5. Convert target column values to 'low-risk' or 'high-risk' based on values.
-
-- 'Current' loan status denotes low-risk loans.
-- 'Late', 'Default', and 'Grace Period' denote high-risk loans.
+    - 'Current' loan status denotes low-risk loans.
+    - 'Late', 'Default', and 'Grace Period' denote high-risk loans.
 
 ### Resampling Models to Predict Credit Risk
 
